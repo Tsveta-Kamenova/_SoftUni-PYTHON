@@ -6,7 +6,7 @@ list_talking_animals = []
 data = input()
 
 
-from operator import attrgetter
+#from operator import attrgetter
 
 
 class Dog:
@@ -82,6 +82,7 @@ for num in range(0, n-1):
     for i in range(n-1, 0, -1):
         if isinstance(list_animals[i], Dog) and not isinstance(list_animals[i-1], Dog):
             list_animals[i], list_animals[i-1] = list_animals[i-1], list_animals[i]
+
 
 
 for item in list_animals:
